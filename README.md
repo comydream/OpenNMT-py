@@ -67,12 +67,30 @@ Table of Contents
 
 ## Setup
 
+原 `README.md` 写的是：
+
+> OpenNMT-py requires:
+>
+> - Python >= 3.6
+> - PyTorch == 1.6.0
+
+然而，在我的 Anaconda 环境下，使用 Python 3.6，装好相应版本的 PyTorch 后，`import torch` 会报错：
+
+```
+ModuleNotFoundError: No module named 'torch.version'
+```
+
+尝试在 Python 3.7 环境下运行，成功。
+
+故改为：
+
 OpenNMT-py requires:
 
-- Python >= 3.6
+- Python >= 3.7
 - PyTorch == 1.6.0
 
 Install `OpenNMT-py` from `pip`:
+
 ```bash
 pip install OpenNMT-py
 ```
